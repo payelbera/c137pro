@@ -24,7 +24,7 @@ export default class StarScren extends Component {
   }
 
   getStarDetails = name => {
-    const url = `http://localhost:5000/star?name=${name}`;
+    const url = `https://0633-2405-201-4013-a18a-6935-515c-8d60-875d.ngrok.io/stars?name=${name}`;
     axios
       .get(url)
       .then(response => {
